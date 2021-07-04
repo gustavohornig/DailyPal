@@ -37,33 +37,13 @@
       <v-spacer />
     </v-app-bar>
     <v-main>
+      <taskWidget />
       <v-container>
         <nuxt />
       </v-container>
     </v-main>
   </v-app>
 </template>
+<script type="text/javascript" src="./script.js" />
 
-<script>
-export default {
-  data () {
-    return {
-      drawer: true,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
-      miniVariant: false,
-      title: 'DailyPal'
-    }
-  }
-}
-</script>
+<style scoped lang="scss" src="./style.scss" />
